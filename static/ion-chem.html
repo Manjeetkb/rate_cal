@@ -1,0 +1,106 @@
+<style>
+body {background-color: gainsboro;
+margin-left: 10px;
+margin-right: 10px;
+}
+h2,h1 {text-align: center;}
+p {text-align: justify;}
+div {text-align: center;}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<html>
+<head>
+<title>Ion-mol reaction</title>
+    <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+</head>
+
+
+<body>
+<h1>Theory of Ion-molecule Reactions</h1>
+<p> Mass spectrometry has provided great deal of information of ion-molecule reactions including extensive thermodynamic
+    information about ions and molecules which include standard enthalpy of ion formation, electron affinities, ionization energies
+    and proton affinities of neutral molecules. Ion-molecule reactions are among the fastest chemical reactions because
+    the electrostatic interaction between ionic charge and polar molecule draws them (ion and molecule) together at long range.
+    The interaction energy as a result is large enough to overcome intrinsic energy barrier to chemical change. As a consequences,
+    these reactions often proceed through zero or very small activation energy at room temperature. The reaction rate coefficients
+    will be determined by collision rate and found to be of the order of ~1*10<sup>-9</sup> cm<sup>3</sup> mol<sup>-1</sup> s<sup>-1</sup>.
+</p>
+<h2> </h2>
+
+<h2> Type of Ion-molecule Reactions in Drift Tube</h2>
+<p>Ion-molecule reactions are of particular interest that can provide a great deal of information on the nature
+of ion chemistry occurring in PTR-MS/SIFT-MS drift tubes. In CI, the reactions between
+the ions and the molecules can lead to a variety of consequences such as simple electron transfer,
+proton transfer, collision association, condensation, clustering, and fragment accompanied
+by extensive chemical bond re-disposition in both the molecule and the ion.
+$$\rm AH^{+}+\rm B \longrightarrow \rm BH^{+}+\rm A\,,  \qquad \text{Proton transfer}$$
+$$\rm A^{+}+\rm BH \longrightarrow \rm B^{+}+\rm AH\,, \qquad \text{Hydride tranfer}$$
+$$\rm A^{\pm}+\rm B \longrightarrow \rm B^{\pm}+ \rm A\,, \qquad \text{Electron tranfer}$$
+
+$$\rm A^{+}+\rm B +\rm Z \longrightarrow \rm BA^{+}+\rm Z\,, \qquad \text{Adduct formation}$$
+
+$$
+\rm A^{+}+\rm B +\rm Z \rightarrow \rm [AB^{+}]^{*} \longrightarrow AB^{+} \rightarrow \rm C^{+}+\rm D\,, \\ \qquad \text{Condensation reaction}
+$$
+ In PTR-MS, proton transfer reactions from
+gaseous Br&#8709;nsted acids to neutral molecules as in reaction (1) follows. Hydride transfer
+    reaction is also quite common under chemical ionization. Electron transfer (charge transfer)
+from ion to the neutral molecule takes place only when
+the molecule B possesses IE less than the IE of the A in the reaction (3). However, the dissociative electron transfer is quite possible at higher IEs.
+
+When the proton transfer
+reaction is exceedingly exothermic, internal energy appearing in the protonated product
+will be enough to cause dissociative proton transfer (AH<sup>+*</sup> ). This is normally seen in
+    dissociative electron-transfer reactions, although, the product ions again offer a signature of
+the reactant molecule so that these types of reactions also present a handful of information
+for the analysis of gases by chemical ionization mass spectrometry. The reaction (4) proceeds through a
+third body Z to prevent dissociation of adduct BA<sup>+</sup>
+by removing some energy. The condensation reaction (5) involving two reactants collisionally
+stabilized and relatively a long-lived collision complex. In the absence of such
+stabilization it decomposes, at least in part, to products different from the reactants and
+yields C<sup>+</sup> and D as shown in reaction (5). The bi-molecular IMRs ranging from reaction
+(1) to (5) are often very fast, exothermic, and occur at every collision. Which makes
+them useful for an efficient ionization of targeted molecules in mass spectrometry.</p>
+<h2> Rate Coefficients in Ion-molecule Collision</h2>
+<p> The rate coefficients of ion-molecule reactions that proceed without activation energy can not be obtained by
+    Arrhenius equation. Although, rate coefficients of such exothermic reactions is given by the capture collision
+    cross-section. Several theories are
+available that allow calculation of the capture or collision
+rate coefficient for an ion-molecule collision. According to the most popular theory, the average dipole
+orientation (ADO) theory, the magnitude of the rates is determined by the physical properties of the reactants: the
+polarizability and permanent dipole of the reacting molecule.</p>
+<h2>References :</h2>
+<ol>
+    <li>D. K. Bohme. Ion-molecule reactions in mass spectrometry. In J. C. Lindon, G. E.
+Tranter, and D. W. Koppenaal, editors, Encyclopedia of Spectroscopy and Spectrometry (Third Edition), 2017. </li>
+<li>T. Fujii. Ion-molecule attachment reactions: Mass spectrometry. In Springer US,
+2015.</li>
+    <li>J. Meyer and R. Wester. Ion-molecule reaction dynamics. Annual Review of Physical
+Chemistry, 2017.</li>
+    <li>L. Bass and M. T. Bowers. Ion-Molecule Association Reactions, volume 31 of Ion
+Cyclotron Resonance Spectrometry II. Springer, Berlin, Heidelberg, 1982.</li>
+    <li>
+    A. M. Ellis, C. A. Mayhew. Proton Transfer Reaction Mass Spectrometry: Principles and Applications.
+        In John Wiley & Sons, 2013.</li>
+    <li>T. Su and M. T. Bowers. Ion-polar molecule collisions. Proton transfer reactions of H<sub>3</sub><sup>+</sup>
+ and CH<sub>5</sub><sup>+</sup> to the geometric isomers of difluoroethylene, dichloroethylene, and
+difluorobenzene. Journal of the American Chemical Society, 1973.</li>
+   <li> T. Su and M. T. Bowers. Theory of ion-polar molecule collisions. comparison with
+experimental charge transfer reactions of rare gas ions to geometric isomers of difluo-
+robenzene and dichloroethylene. The Journal of Chemical Physics, 1973.</li>
+    </ol>
+</body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<style>
+body {background-color: gainsboro;
+margin-left: 10px;
+margin-right: 10px;
+}
+h2,h1,h3 {text-align: center;}
+p {text-align: justify;}
+div {text-align: center;}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<html>
+<head>
+<title>collision</title>
+       <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+</head>
+
+<body>
+<h1>Basics of Collision in Gas-Phase</h1>
+
+<h2>Ion-molecule Collision Theory</h2>
+<p>Ion-molecule reactions involve the collision of ions (positive and negative) with neutral molecule
+give rise to chemical reaction in which at least one chemical bond is ruptured or one new bond is formed.
+Many possible outcomes as a result of ion-molecule collision include charge transfer, atom abstraction, complex formation,
+collision induced dissociation, collision induced ionization and ionization etc. There are certain factors on which the the
+reaction outcome depends which are chemical and physical properties of the reactants, their relative velocity and impact parameter
+of their trajectories. Further, ion-molecule reactions can be classified based on the interaction energy involved in the collision are
+low energy and higher energy. Low energy reaction (less than 10 eV) are some of the most important reactions occur in
+upper atmosphere, radiation chemistry, ion-loses and electric discharge. High energy collisions are typically impulsive and
+involve short-range intermolecular forces and are direct and fast reactions. We will focus here in low energy ion-molecule collision
+strongly dominated by long-range interactions and ofter proceed at capture collision. A dipole is induced by the ion on the neutral
+molecule and due to this ion-molecule reactions have very large collision cross-section. Generally, such reactions are
+independent of temperature and activation energy usually found to be zero and reaction occurs at almost every collision.
+</p>
+<h2>Collision Cross-section</h2>
+<p> The fundamental quantity that measures the probability or likelihood of ion-molecule reaction is the microscopic
+total reaction cross-section $\sigma_{R} (v)$. Collision cross-section is defined as the area around a particle
+in which the center of another particle must be in order for the collision to occur. If two molecules A and B are to react,
+they must come into contact with sufficient force such that chemical bonds in the reactant side break in order to have
+a reaction. For an effective collision, there must be sufficient energy (KE) to initiate a reaction known as activation
+energy. For molecules A and B, when distance between their
+nuclei $(r_{AB})$ is less than the sum of their radii $(r_{A}+r_{B})$ then the collision will occur.
+For the reaction to occur, necessary conditions are:
+<ul>
+    <li>The molecules must collide for the reaction to happen.</li>
+    <li>Collision must possess sufficient energy to break bonds in the reactant side.</li>
+    <li>They must be in proper orientation.</li>
+</ul>
+
+</p>
+<h2>Rate Coefficient</h2>
+During the course of the reaction shown below, reactants A and B are consumed while the concentration of product
+AB increases. The reaction rate can be determined by measuring how fast the concentration of A or B decreases, or
+by how fast the concentration of AB increases.
+$${A + B = AB}$$
+A rate law is an expression which relates that rate of a reaction to the rate constant and the concentrations of
+the reactants. A rate constant, k, is a proportionality constant for a given reaction. The general rate law is
+usually expressed as:
+$${Rate = k[A]^{s}[B]^{t}}$$
+The factors which affect the rate of a reaction are temperature, concentration etc.
+Ion-molecule reactions are characterized by a long-range attractive force between the charge
+on the ion and the dipole induced by the ion on the neutral molecule. Ion-molecule reactions which occur
+with zero activation energy are quite fast, exothermic and the rate
+coefficient of such reactions is equal to the 'capture' or 'collision' rate coefficient. Because the long-range
+attractive force 'captures' the approaching reactants and can bring them into a favourable trajectory for the reaction to
+occur.
+As per average dipole orientation (ADO) theory the magnitude of rate coefficient is determined
+by the physical properties of the reactants i.e. dipole moment $\mu_{D}$ and polarizability $\alpha$.
+Ion-molecule reactions of the type mentioned above are quite common in PTR-MS/SIFT-MS drift tubes.
+In the PTR-MS drift tube, H<sub>3</sub>O<sup>+</sup> ions in buffer gas (air or He) are allowed to react
+with the analyte molecule R and undergo proton transfer reaction as follows:
+$${H_{3}O^{+} + R \longrightarrow RH^{+} + H_{2}O}.$$
+Where concentration [R] of the analyte compound in the above exothermic reaction can be
+measured from the following equation:
+$$[{\rm R}] = \frac{1}{\rm k\tau} \frac{[{\rm RH}^{+}]}{[{\rm H}_3{\rm O}^{+}]_o}\,,$$
+where $[H_{3}\rm O^{+}]_o$ is the density of $H_{3}O^{+}$ ions without the reactant neutrals in buffer gas and
+[RH<sup>+</sup>] is the density of the product ion.
+k is the rate coefficient of the reaction and ${\tau}$ is the reaction time (the reaction time
+it takes for the reagent ion to travel from the point where it is first mixed with the analyte
+to the end of the drift tube beyond which reaction essentially stops) for the reagent ions traversing the drift
+tube usually ${\sim 100~\mu}$s. The rate coefficient k can be calculated from ADO theory which further depends on the
+dipole moment and polarizability of the reactant (already mentioned above).
+<h2>References :</h2>
+<ol>
+    <li>C. H. Bamford and C. F. H. Tipper. Comprehensive Chemical Kinetics, Vol. 16, Liquid-Phase Oxidation,
+        Elsevier, Amsterdam 1980. </li>
+    <li>Collision theory, wikipedia.</li>
+    <li>D. K. Bohme. Ion-molecule reactions in mass spectrometry. In J. C. Lindon, G. E.
+Tranter, and D. W. Koppenaal, editors, Encyclopedia of Spectroscopy and Spectrometry (Third Edition), 2017.</li>
+    <li> A. M. Ellis, C. A. Mayhew. Proton Transfer Reaction Mass Spectrometry: Principles and Applications.
+        In John Wiley & Sons, 2013.</li>
+    <li>L. M. Babcock and N. G. Adams, Advances in Gas Phase Ion Chemistry, V-4 Elsevier Science, 2002.</li>
+    <li>R. S. Blake, P. S. Monks, and A. M. Ellis. Proton-transfer reaction mass spectrometry.
+Chemical Reviews, 109(3):861–896, 2009.</li>
+</ol>
+</body>
+</html>

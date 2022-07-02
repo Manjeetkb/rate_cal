@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>results</title>
+  </head>
+  <style>
+    table, th, td {
+      border:1px solid black;
+      
+    }
+    body{
+        background-color: lightblue;
+    }
+    </style>
+  <body>
+    <p>
+    <h4>Table containing summarized data</h4>
+    <p>
+    <table>
+        <tr>
+            <th>Dipole Moment <br>
+            (Debye)</th>
+            <th>Polarizability<br>
+                (&#8491;<sup>3</sup>)</th>
+            <th>Temperature<br>
+                (K)</th>
+            <th>T_effective<br>
+                (K)</th>
+                <th>k_cap (Langevin)<br>
+                    (cm<sup>3</sup>s<sup>-1</sup>)</th>
+            <th>k_cap (parametrized)<br>
+                (cm<sup>3</sup>s<sup>-1</sup>)</th>
+        </tr>
+
+        <tr>
+            
+            <td><center>{{dipole}}</center> </td>
+            <td><center>{{polar}}</center> </td>
+            <td> <center>{{temper}}</center></td>
+            <td> <center>{{teff}}</center></td>
+            <td><center>{{lang}}</center> </td>
+            <td><center>{{rates}}</center> </td>
+        </tr>
+
+
+
+
+
+    </table>
+    
+    <h4>Additional information---></h4>
+    
+    Kinetic energy of ion : {{keion}} eV<br>
+    Kinetic energy COM : {{keioncom}} eV<br>
+    Effective temperature : {{teff}}<br>
+    <br>
+    <b>Note :</b> Dipole moment and Polarizability values are computed from DFT calculations using <br>
+    QuantumEspresso (BLYP)/Gaussian 16 (B<sub>3</sub>LYP/Aug-cc-PVTZ and B<sub>3</sub>LYP/6-31+(d,p)) combination.<br>
+  </body>
+</html>

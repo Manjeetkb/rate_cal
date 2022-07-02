@@ -43,9 +43,9 @@ def add(request):
     plz1 = rslt_df['Polarizability']
     plz = float(plz1)
     #print(plz)
-    f = open("/static/data.html", "w")
-    f.write(dataframe)
-    f.close()
+    #f = open("/home/manjeet/project_rate/ratecal/static/data.html", "w")
+    #f.write(dataframe)
+    #f.close()
     
     '''mass of the ion entering'''
     mass_ion = {

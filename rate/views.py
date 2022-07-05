@@ -39,11 +39,11 @@ def add(request):
     #print(rslt_df)
     m = rslt_df['Mass']
     dipole_moment1 = rslt_df['Dipole Moment']
-    dipole_moment2 = float(dipole_moment1)
-    dipole_moment = "{:.2f}".format(dipole_moment2)
+    dipole_moment = float(dipole_moment1)
+    #dipole_moment = "{:.2f}".format(dipole_moment2)
     plz1 = rslt_df['Polarizability']
-    plz2 = float(plz1)
-    plz = "{:.2f}".format(plz2)
+    plz = float(plz1)
+    #plz = "{:.2f}".format(plz2)
     #print(plz)
     #f = open("/home/manjeet/project_rate/ratecal/static/data.html", "w")
     #f.write(dataframe)

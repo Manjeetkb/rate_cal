@@ -1,0 +1,79 @@
+<style>
+body {background-color: gainsboro;
+margin-left: 10px;
+margin-right: 10px;
+}
+h2,h1 {text-align: center;}
+p {text-align: justify;}
+div {text-align: center;}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<title>Proton affinity</title>
+ <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<body>
+<h1>Proton Affinity</h1>
+<p>Proton affinity (PA) of a molecule is defined as the negative enthalpy change of the reaction.
+Since the acceptance of a proton is an exothermic process, the PA is a positive
+quantity. PA values as it serves as a guide to the possible route of proton transfer processes.
+Proton transfer reactions play an important role in analytical chemistry and biochemistry.
+    In chemical ionization mass spectrometry, both positive and negative ions are operated.
+One of the most commonly used reagent ions is $H_{3}O^{+}$ ion. The proton transfer reaction (PTR) with $H_{3}O^{+}$ ions is
+effective only when the proton affinity of the acceptor molecule is higher than the $H_{2}O$
+molecule. If the molecule possesses higher PA than $H_{2}O$, the PTR will be exothermic and
+favored thermodynamically. PA of the reaction
+$$\rm A + \rm H^{+} \rightarrow \rm AH^{+}\,,$$
+is defined as the negative of the reaction enthalpy at 298.15K, and hence $({\it T}$: temperature,
+R: ideal gas constant)
+
+$$\rm PA = -\Delta H = -\Delta E+ \rm R \it T\,.$$
+The energy of a non-linear poly-atomic molecule can be approximated as
+$$\rm E(\it T) = \rm E_{rot}(\it T) + \rm E_{trans}(\it T) + \rm ZPE + {E'}_{vib}(\it T) + \rm E_{ele}\,,$$
+    where ZPE stands for zero point energy of the normal modes. From statistics mechanics,
+    E$_{\rm rot}(T)$ and E$_{\rm trans}(T)$ each contributes $\frac{3}{2}$R $T$.
+    The quantity E'$_{\rm vib}(T)$ is usually less than 1 kcal/mol at room temperature,
+    which is much less than the experimental error, and neglected as compared to ZPE.
+    In this formalism, ground state energy of proton contribution is zero. Hence
+
+$$\rm PA = -\Delta \rm E_{ele}-\Delta \rm ZPE + \frac{5}{2}R\it T\,,$$
+
+where, $\Delta \rm E_{ele}$ and $\Delta \rm ZPE$ are the change in the electronic energy and change
+    in zero point energy to the protonated and neutral molecule. The last term in  is the contribution
+    from E$_{\rm rot}(T)$, E$_{\rm trans}(T)$ and R$T$ to the equation.
+
+
+One can expect that a molecule can have more than one site of protonation depending on the electronegativity
+of the individual atoms of a molecule. PA value at one site can be different
+from the value at another site within a complex molecule. Also, protonation may occur on
+the sites other than the thermodynamically favorable sites.
+
+</p>
+Experimental data of PA for many compounds has been listed by
+ <a href="lias.pdf">Lias et. al</a>   and from
+    <a href="https://cccbdb.nist.gov/palistx.asp">NIST database</a>.
+<br>
+PA values for cork-taint and off-flavour molecules in wine computed using DFT calculations
+are listed <a href="IE-cork.pdf">here</a>. These values have been obtained by
+Gaussian16 code.
+<br>
+For more information on how to compute PA using DFT methods click
+<a href="https://www.quantum-espresso.org/">here</a> for QuantumEspresso and
+<a href="https://gaussian.com/">here</a> for Gaussian.
+
+
+</body>
+
+

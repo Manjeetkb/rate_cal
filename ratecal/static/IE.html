@@ -1,0 +1,79 @@
+<style>
+body {background-color: gainsboro;
+margin-left: 10px;
+margin-right: 10px;
+}
+h2,h1 {text-align: center;}
+p {text-align: justify;}
+div {text-align: center;}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<title>Ionization energy</title>
+ <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<body>
+<h1>Ionization Energy</h1>
+<p>Ionization energy (IE) is the minimum energy required to remove an electron from the gaseous atom or ion.
+    It measures the difficulty of removing electron in other words the strength by which an electron is bounded.
+    IE can be computed as the difference between the total energies for the
+ground state of the molecule in ionic state to the neutral molecule.
+$${\rm IE} = {\rm E_{0}(N-1)} - {\rm E_{0}N}$$
+IE calculated by this way, as from above equation, is often much more accurate since systematic
+errors cancel and the difference of energies from correlated quantum mechanical techniques
+give even more accurate results than might be obtained by experimental methods.
+IE values are of great interest to SIFT-MS experiments as these values help us to determine
+whether a reaction of $NO^{+}$ and $O_{2}^{+}$ ions to the analyte molecule occur by charge transfer or
+not. The reactions involving charge exchange mass spectra is the net result of the
+energy-dependent scheme operating at fixed internal energy (over a small range of internal
+energies). The exothermicity of the reaction is determined by the recombination energy of the
+reactant ions less than the ionization energy of the molecule. It has been observed analytically
+that low energy charge exchange raises the difference in the mass spectrum of most
+isobaric compounds. In addition to this, charge exchange spectra as a result becomes much
+simpler. The charge exchange reaction with $NO^{+}$ ion to the volatile organic compounds is an ideal
+example. IE of NO is 9.3 eV, although, the effective recombination energy of $NO^{+}$ ion under CI conditions
+appears to be considerably lower. Organic molecules having IE values lower than NO undergo
+extensive charge exchange reactions. $NO^{+}$ ion reacts with many aromatic organic
+compounds through charge exchange or adduct formation. Experimental results have shown that aromatic
+compounds having IE higher than ~8.7 eV promote adduct ion formation otherwise dominant charge
+exchange reactions will be preferred. Above verdict can be applicable to other class of compounds as well.
+Results have shown that under CI condition, $NO^{+}$ ions have a successful charge exchange reaction
+energy window with the molecules having IE ~ 8.7 eV. Another popular reagent ion commonly used in SIFT-MS
+experiments for application point of view is $O_{2}^{+}$ ion. Although, the usefulness of $O_{2}^{+}$ is
+limited due to high IE of $O_{2}$ molecule (~ 12 eV) that may deposit a large amount of energy to the product
+ion and promote large fragmentation upon reaction with volatile organic compounds. However, most organic
+molecules are found to have IE values well below the IE of $O_{2}$ molecule and proceed
+through charge exchange reactions. This suggests that all the
+molecules which are not quantified by $NO^{+}$ may undergo charge exchange reactions with
+$O_{2}^{+}$ ion.
+</p>
+Experimental data of ionization energy obtained by Lias et. al for selected molecules can be obtained
+    <a href="lias.pdf">here</a>. Also, <a href="https://cccbdb.nist.gov/xp1x.asp?prop=8">NIST database</a> is a good source.
+<br>
+Ionization energy values for cork-taint and off-flavour molecules in wine computed using DFT calculations
+are listed <a href="IE-cork.pdf">here</a>. These values have been obtained by
+Gaussian16 code.
+<br>
+For more information on how to compute ionization energy using DFT methods click
+<a href="https://www.quantum-espresso.org/">here</a> for QuantumEspresso and
+<a href="https://gaussian.com/">here</a> for Gaussian.
+</body>
+
+
+</body>
+
+
+
+
